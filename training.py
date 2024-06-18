@@ -25,6 +25,7 @@ def train(args, model, train_loader, dev_loader, test_loader):
                         warmup=args.warmup_ratio,
                         t_total=len(train_loader) * args.epoch)
 
+    # Initialize variables for tracking progress
     total_batch = 0
     dev_best_acc_top = 0.0
     dev_best_acc_sec = 0.0
