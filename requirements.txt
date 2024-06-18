@@ -2,5 +2,4 @@ transformers
 pytorch-pretrained-bert
 nltk
 scikit-learn
-pickle
 tqdm
