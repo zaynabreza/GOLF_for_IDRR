@@ -1,0 +1,5 @@
+18:35 INFO     {'cuda': 0, 'seed': 0, 'data_file': 'PDTB3/Ji/data/', 'log_file': 'PDTB3/Ji/log/', 'save_file': 'PDTB3/Ji/saved_dict/', 'model_name_or_path': 'roberta-base', 'freeze_bert': False, 'num_co_attention_layer': 2, 'pad_size': 100, 'batch_size': 32, 'epoch': 15, 'lr': 1e-05, 'warmup_ratio': 0.05, 'evaluate_steps': 100, 'require_improvement': 10000, 'i2top': '', 'top2i': '', 'n_top': 4, 'i2sec': '', 'sec2i': '', 'n_sec': 14, 'i2conn': '', 'conn2i': '', 'n_conn': 186, 'label_num': 204, 'tokenizer': '', 'config': '', 't': 'June18-18:35:03', 'log': 'PDTB3/Ji/log/June18-18:35:03.log', 'device': device(type='cpu')}
+18:35 INFO     Loading data...
+18:35 INFO     Time usage: 12.006795167922974
+18:35 DEBUG    https://huggingface.co:443 "HEAD /roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+18:35 INFO     Epoch [1/15]

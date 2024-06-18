@@ -60,9 +60,9 @@ if __name__ == '__main__':
 
 
     ## File paths
-    parser.add_argument('--data_file', type=str, default='PDTB/Ji/data/', help='the file of data')
-    parser.add_argument('--log_file', type=str, default='PDTB/Ji/log/', help='the file of log')
-    parser.add_argument('--save_file', type=str, default='PDTB/Ji/saved_dict/', help='save model file')
+    parser.add_argument('--data_file', type=str, default='PDTB3/Ji/data/', help='the file of data')
+    parser.add_argument('--log_file', type=str, default='PDTB3/Ji/log/', help='the file of log')
+    parser.add_argument('--save_file', type=str, default='PDTB3/Ji/saved_dict/', help='save model file')
     
     ## model arguments
     parser.add_argument('--model_name_or_path', type=str, default='roberta-base', help='the name of pretrained model')
@@ -70,7 +70,7 @@ if __name__ == '__main__':
     # parser.add_argument('--temperature', type=float, default=0.1, help='temperature of contrastive learning')
     
     
-    # parser.add_argument('--num_co_attention_layer', type=int, default=2, help='number of co-attention layers')
+    parser.add_argument('--num_co_attention_layer', type=int, default=2, help='number of co-attention layers')
     # parser.add_argument('--num_gcn_layer', type=int, default=2, help='number of gcn layers')
     # parser.add_argument('--gcn_dropout', type=float, default=0.1, help='dropout rate after gcn layer')
     # parser.add_argument('--label_embedding_size', type=int, default=100, help='embedding dimension of labels')

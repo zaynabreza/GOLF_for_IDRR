@@ -154,6 +154,11 @@ class Model(nn.Module):
         logits_top = self.fc_top(pooled) # (batch, top)
         logits_sec = self.fc_sec(torch.cat([pooled, logits_top], dim=-1)) # (batch, sec)
         logits_conn = self.fc_conn(torch.cat([pooled, logits_sec], dim=-1)) # (batch, conn)
+
+        # Adjust target sizes by repeating
+        y1_top = y1_top.repeat(2)
+        y1_sec = y1_sec.repeat(2)
+        y1_conn = y1_conn.repeat(2)
     
         loss_fct = nn.CrossEntropyLoss()
         classification_loss = loss_fct(logits_top, y1_top) \
