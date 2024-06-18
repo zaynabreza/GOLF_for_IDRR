@@ -54,10 +54,12 @@ def seed_torch(seed=0):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Global and Local Hierarchy-aware Contrastive Framework for Hierarchical Implicit Discourse Relation Recognition')
+    parser = argparse.ArgumentParser(description='Hierarchical Implicit Discourse Relation Recognition')
     parser.add_argument('--cuda', type=int, default=0, choices=[0, 1], help='choose a cuda: 0 or 1')
     parser.add_argument('--seed', type=int, default=0, help='random seed')
-    
+
+
+    ## File paths
     parser.add_argument('--data_file', type=str, default='PDTB/Ji/data/', help='the file of data')
     parser.add_argument('--log_file', type=str, default='PDTB/Ji/log/', help='the file of log')
     parser.add_argument('--save_file', type=str, default='PDTB/Ji/saved_dict/', help='save model file')
@@ -65,13 +67,16 @@ if __name__ == '__main__':
     ## model arguments
     parser.add_argument('--model_name_or_path', type=str, default='roberta-base', help='the name of pretrained model')
     parser.add_argument('--freeze_bert', action='store_true', default=False, help='whether freeze the parameters of bert')
-    parser.add_argument('--temperature', type=float, default=0.1, help='temperature of contrastive learning')
-    parser.add_argument('--num_co_attention_layer', type=int, default=2, help='number of co-attention layers')
-    parser.add_argument('--num_gcn_layer', type=int, default=2, help='number of gcn layers')
-    parser.add_argument('--gcn_dropout', type=float, default=0.1, help='dropout rate after gcn layer')
-    parser.add_argument('--label_embedding_size', type=int, default=100, help='embedding dimension of labels')
-    parser.add_argument('--lambda_global', type=float, default=0.1, help='lambda for global_hierarcial_contrastive_loss')
-    parser.add_argument('--lambda_local', type=float, default=1.0, help='lambda for local_hierarcial_contrastive_loss')
+    # parser.add_argument('--temperature', type=float, default=0.1, help='temperature of contrastive learning')
+    
+    
+    # parser.add_argument('--num_co_attention_layer', type=int, default=2, help='number of co-attention layers')
+    # parser.add_argument('--num_gcn_layer', type=int, default=2, help='number of gcn layers')
+    # parser.add_argument('--gcn_dropout', type=float, default=0.1, help='dropout rate after gcn layer')
+    # parser.add_argument('--label_embedding_size', type=int, default=100, help='embedding dimension of labels')
+    # parser.add_argument('--lambda_global', type=float, default=0.1, help='lambda for global_hierarcial_contrastive_loss')
+    # parser.add_argument('--lambda_local', type=float, default=1.0, help='lambda for local_hierarcial_contrastive_loss')
+   
     ## training arguments
     parser.add_argument('--pad_size', type=int, default=100, help='the max sequence length')
     parser.add_argument('--batch_size', type=int, default=32, help='batch size')
