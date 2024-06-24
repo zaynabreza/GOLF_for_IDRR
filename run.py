@@ -70,7 +70,7 @@ if __name__ == '__main__':
     # parser.add_argument('--temperature', type=float, default=0.1, help='temperature of contrastive learning')
     
     
-    parser.add_argument('--num_co_attention_layer', type=int, default=2, help='number of co-attention layers')
+    # parser.add_argument('--num_co_attention_layer', type=int, default=2, help='number of co-attention layers')
     # parser.add_argument('--num_gcn_layer', type=int, default=2, help='number of gcn layers')
     # parser.add_argument('--gcn_dropout', type=float, default=0.1, help='dropout rate after gcn layer')
     # parser.add_argument('--label_embedding_size', type=int, default=100, help='embedding dimension of labels')
@@ -89,16 +89,12 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     
-    args.i2top = [x.strip() for x in open(args.data_file + 'top.txt').readlines()]
-    args.top2i = dict((x, xid) for xid, x in enumerate(args.i2top))
-    args.n_top = len(args.i2top)
+    
     args.i2sec = [x.strip() for x in open(args.data_file + 'sec.txt').readlines()]
     args.sec2i = dict((x, xid) for xid, x in enumerate(args.i2sec))
     args.n_sec = len(args.i2sec)
-    args.i2conn = [x.strip() for x in open(args.data_file + 'conn.txt').readlines()]
-    args.conn2i = dict((x, xid) for xid, x in enumerate(args.i2conn))
-    args.n_conn = len(args.i2conn)
-    args.label_num = args.n_top + args.n_sec + args.n_conn # total label num(top:4,second:11,conn:102)
+    
+    args.label_num = args.n_sec  # total label num(top:4,second:11,conn:102)
     
     args.tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path, use_fast=False)
     args.config = AutoConfig.from_pretrained(args.model_name_or_path)
@@ -111,11 +107,9 @@ if __name__ == '__main__':
     setlogging(lgg.DEBUG, args.log)
     seed_torch(args.seed)
 
-    hyper_parameters = args.__dict__.copy()
-    hyper_parameters['i2conn'] = ''
-    hyper_parameters['conn2i'] = ''
-    hyper_parameters['i2top'] = ''
-    hyper_parameters['top2i'] = ''
+   
+    hyper_parameters = vars(args).copy()
+   
     hyper_parameters['i2sec'] = ''
     hyper_parameters['sec2i'] = ''
     hyper_parameters['tokenizer'] = ''
