@@ -63,6 +63,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_file', type=str, default='PDTB3/Ji/data/', help='the file of data')
     parser.add_argument('--log_file', type=str, default='PDTB3/Ji/log/', help='the file of log')
     parser.add_argument('--save_file', type=str, default='PDTB3/Ji/saved_dict/', help='save model file')
+    parser.add_argument('--save_preds', type=str, default='PDTB3/Ji/preds/', help='file with test predictions')
     
     ## model arguments
     parser.add_argument('--model_name_or_path', type=str, default='roberta-base', help='the name of pretrained model')

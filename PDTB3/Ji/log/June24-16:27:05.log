@@ -3,3 +3,36 @@
 16:27 INFO     Time usage: 40.745728731155396
 16:27 DEBUG    https://huggingface.co:443 "HEAD /roberta-base/resolve/main/config.json HTTP/1.1" 200 0
 16:27 INFO     Epoch [1/15]
+17:23 INFO     SEC: Iter:    100,  Train Loss:   2.2,  Train Acc: 21.88%, Val Loss:   2.2,  Val Acc: 20.86%, Val F1:  4.38% Time: 3330.81520485878 *
+23:33 INFO     SEC: Iter:    200,  Train Loss:   2.0,  Train Acc: 28.12%, Val Loss:   1.8,  Val Acc: 37.60%, Val F1: 12.48% Time: 25521.097780942917 *
+09:08 INFO     SEC: Iter:    300,  Train Loss:   1.6,  Train Acc: 40.62%, Val Loss:   1.5,  Val Acc: 49.61%, Val F1: 32.66% Time: 60067.106671094894 *
+09:28 INFO     SEC: Iter:    400,  Train Loss:   1.3,  Train Acc: 50.00%, Val Loss:   1.3,  Val Acc: 54.42%, Val F1: 36.36% Time: 61216.04041194916 *
+09:51 INFO     SEC: Iter:    500,  Train Loss:   1.2,  Train Acc: 62.50%, Val Loss:   1.3,  Val Acc: 56.14%, Val F1: 43.35% Time: 62592.03722691536 *
+10:04 INFO     Train time usage: 63381.919362068176
+10:07 INFO     Test time usage: 173.98907017707825
+10:07 INFO     SEC: Test Loss:   1.2,  Test Acc: 58.90%, Test F1: 46.41%
+10:07 INFO                                precision    recall  f1-score   support
+
+    Temporal.Asynchronous     0.5918    0.6824    0.6339        85
+     Temporal.Synchronous     1.0000    0.1000    0.1818        30
+        Contingency.Cause     0.6166    0.6907    0.6515       291
+ Contingency.Cause+Belief     0.0000    0.0000    0.0000        14
+    Contingency.Condition     1.0000    0.1429    0.2500         7
+      Contingency.Purpose     0.9231    1.0000    0.9600        60
+      Comparison.Contrast     0.4318    0.5588    0.4872        34
+    Comparison.Concession     0.3900    0.5821    0.4671        67
+    Expansion.Conjunction     0.5140    0.6301    0.5662       146
+    Expansion.Equivalence     0.0000    0.0000    0.0000        27
+  Expansion.Instantiation     0.7234    0.6869    0.7047        99
+Expansion.Level-of-detail     0.5208    0.3521    0.4202       142
+         Expansion.Manner     0.6364    0.4667    0.5385        15
+   Expansion.Substitution     0.6364    0.6364    0.6364        22
+
+                 accuracy                         0.5890      1039
+                macro avg     0.5703    0.4664    0.4641      1039
+             weighted avg     0.5843    0.5890    0.5681      1039
+
+10:07 INFO     Epoch [2/15]
+10:18 INFO     SEC: Iter:    600,  Train Loss:   1.1,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 58.71%, Val F1: 43.99% Time: 662.3963840007782 *
+10:40 INFO     SEC: Iter:    700,  Train Loss:   1.2,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 46.68% Time: 2005.6725008487701 *
+11:02 INFO     SEC: Iter:    800,  Train Loss:   1.2,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 59.83%, Val F1: 46.10% Time: 3351.600630044937 *

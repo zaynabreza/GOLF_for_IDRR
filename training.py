@@ -86,7 +86,8 @@ def test(args, model, test_loader):
     model.eval()
     start_time = time.time()
 
-    test_loss, acc_sec, f1_sec, report_sec, confusion_sec = evaluate(args, model, test_loader, test=True)
+    test_loss, acc_sec, f1_sec, report_sec, confusion_sec, predictions = evaluate(args, model, test_loader, test=True)
+
 
     time_dif = get_time_dif(start_time)
     lgg.info("Test time usage: {}".format(time_dif))
@@ -95,6 +96,8 @@ def test(args, model, test_loader):
     lgg.info(msg.format(test_loss, acc_sec, f1_sec))
     
     lgg.info(report_sec)
+
+    np.savetxt(args.save_preds+args.model_name_or_path+'preds.csv', predictions, fmt='%d', delimiter=',')
     return acc_sec, f1_sec
 
 
@@ -159,8 +162,8 @@ def evaluate(args, model, data_loader, test=False):
 
         report_sec = metrics.classification_report(gold_sense_sec, predict_sense_sec, target_names=args.i2sec, digits=4)
         confusion_sec = metrics.confusion_matrix(gold_sense_sec, predict_sense_sec)
-     
+        predictions = np.vstack((gold_sense_sec, predict_sense_sec)).T
 
-        return loss_total / len(data_loader), acc_sec, f1_sec, report_sec, confusion_sec
+        return loss_total / len(data_loader), acc_sec, f1_sec, report_sec, confusion_sec, predictions
                 
     return loss_total / len(data_loader), acc_sec, f1_sec
