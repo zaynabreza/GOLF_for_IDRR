@@ -1,0 +1,12 @@
+13:32 INFO     {'cuda': 0, 'seed': 0, 'data_file': 'Combined/data/', 'log_file': 'Combined/log/', 'save_file': 'Combined/saved_dict', 'save_preds': 'Combined/preds/', 'model_name_or_path': 'roberta-base', 'freeze_bert': False, 'pad_size': 100, 'batch_size': 32, 'epoch': 25, 'lr': 1e-05, 'warmup_ratio': 0.05, 'evaluate_steps': 100, 'require_improvement': 10000, 'i2sec': '', 'sec2i': '', 'n_sec': 14, 'label_num': 14, 'tokenizer': '', 'config': '', 't': 'July19-13:32:54', 'log': 'Combined/log/July19-13:32:54.log', 'device': device(type='cuda', index=0)}
+13:32 INFO     Loading data...
+13:33 INFO     Time usage: 18.241530418395996
+13:33 DEBUG    https://huggingface.co:443 "HEAD /roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+13:33 INFO     Epoch [1/25]
+13:34 INFO     SEC: Iter:    100,  Train Loss:   2.4,  Train Acc: 21.88%, Val Loss:   2.3,  Val Acc: 28.41%, Val F1:  3.16% Time: 44.32880878448486 *
+13:34 INFO     SEC: Iter:    200,  Train Loss:   2.1,  Train Acc: 18.75%, Val Loss:   2.0,  Val Acc: 30.21%, Val F1:  5.59% Time: 82.6492280960083 *
+13:35 INFO     SEC: Iter:    300,  Train Loss:   2.0,  Train Acc: 40.62%, Val Loss:   1.9,  Val Acc: 33.99%, Val F1:  9.01% Time: 120.3638813495636 *
+13:36 INFO     SEC: Iter:    400,  Train Loss:   1.6,  Train Acc: 46.88%, Val Loss:   1.7,  Val Acc: 39.48%, Val F1: 15.56% Time: 158.13819861412048 *
+13:36 INFO     SEC: Iter:    500,  Train Loss:   1.5,  Train Acc: 43.75%, Val Loss:   1.5,  Val Acc: 46.27%, Val F1: 24.69% Time: 196.0707929134369 *
+13:37 INFO     SEC: Iter:    600,  Train Loss:   1.4,  Train Acc: 56.25%, Val Loss:   1.4,  Val Acc: 49.27%, Val F1: 28.50% Time: 233.83217477798462 *
+13:37 INFO     Train time usage: 262.93691086769104
