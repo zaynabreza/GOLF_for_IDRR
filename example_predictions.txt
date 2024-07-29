@@ -1,0 +1,6 @@
+Gold1: Contingency.Cause, Gold2: Expansion.Conjunction, Predicted: Contingency.Cause
+Gold1: Temporal.Asynchronous, Gold2: Expansion.Substitution, Predicted: Temporal.Asynchronous
+Gold1: Comparison.Contrast, Gold2: Comparison.Similarity, Predicted: Comparison.Similarity
+Gold1: Temporal.Synchronous, Gold2: Contingency.Purpose, Predicted: Comparison.Concession
+Gold1: Expansion.Level-of-detail, Gold2: Expansion.Instantiation, Predicted: Expansion.Level-of-detail
+Gold1: Comparison.Concession, Gold2: Expansion.Conjunction, Predicted: Expansion.Disjunction

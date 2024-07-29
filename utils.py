@@ -52,8 +52,15 @@ class MyDataset(Dataset):
                     continue
                 labels1, labels2, arg1, arg2 = [_.strip() for _ in lin.split('|||')]
                 labels1, labels2 = eval(labels1), eval(labels2)
-                label_sec1 = args.sec2i[labels1[1]] if labels1[1] is not None else -1
-                label_sec2 = args.sec2i[labels2[1]] if labels2[1] is not None else -1
+
+                # Initialize default labels
+                label_sec1 = -1
+                label_sec2 = -1
+                try:
+                    label_sec1 = args.sec2i[labels1[1]] if labels1[1] is not None else -1
+                    label_sec2 = args.sec2i[labels2[1]] if labels2[1] is not None else -1
+                except KeyError:
+                    pass
 
 
                 # arg1_token = args.tokenizer.tokenize(arg1)
