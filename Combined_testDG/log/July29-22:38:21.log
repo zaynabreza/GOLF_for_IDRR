@@ -1,0 +1,279 @@
+22:38 INFO     {'cuda': 0, 'seed': 0, 'data_file': 'Combined_testDG/data/', 'log_file': 'Combined_testDG/log/', 'save_file': 'Combined_testDG/saved_dicts/', 'save_preds': 'Combined_testDG/preds/', 'model_name_or_path': 'roberta-base', 'freeze_bert': False, 'pad_size': 100, 'batch_size': 32, 'epoch': 25, 'lr': 1e-05, 'warmup_ratio': 0.05, 'evaluate_steps': 100, 'require_improvement': 10000, 'i2sec': '', 'sec2i': '', 'n_sec': 14, 'label_num': 14, 'tokenizer': '', 'config': '', 't': 'July29-22:38:21', 'log': 'Combined_testDG/log/July29-22:38:21.log', 'device': device(type='cuda', index=0)}
+22:38 INFO     Loading data...
+22:38 INFO     Time usage: 15.759095668792725
+22:38 DEBUG    https://huggingface.co:443 "HEAD /roberta-base/resolve/main/config.json HTTP/1.1" 200 0
+22:38 INFO     Epoch [1/25]
+22:39 INFO     SEC: Iter:    100,  Train Loss:   2.4,  Train Acc: 21.88%, Val Loss:   2.3,  Val Acc: 28.41%, Val F1:  3.16% Time: 41.491119384765625 *
+22:40 INFO     SEC: Iter:    200,  Train Loss:   2.1,  Train Acc: 18.75%, Val Loss:   2.0,  Val Acc: 30.21%, Val F1:  5.59% Time: 80.7454297542572 *
+22:40 INFO     SEC: Iter:    300,  Train Loss:   2.0,  Train Acc: 40.62%, Val Loss:   1.9,  Val Acc: 33.99%, Val F1:  9.01% Time: 119.11363220214844 *
+22:41 INFO     SEC: Iter:    400,  Train Loss:   1.6,  Train Acc: 46.88%, Val Loss:   1.7,  Val Acc: 39.48%, Val F1: 15.56% Time: 157.08358359336853 *
+22:42 INFO     SEC: Iter:    500,  Train Loss:   1.5,  Train Acc: 43.75%, Val Loss:   1.5,  Val Acc: 46.27%, Val F1: 24.69% Time: 196.47999787330627 *
+22:42 INFO     SEC: Iter:    600,  Train Loss:   1.4,  Train Acc: 56.25%, Val Loss:   1.4,  Val Acc: 49.27%, Val F1: 28.50% Time: 236.64131665229797 *
+22:43 INFO     Train time usage: 263.9074070453644
+22:43 INFO     Test time usage: 2.5678327083587646
+22:43 INFO     CoNLL Method: Test Acc: 46.20%, Test F1: 23.74%
+22:43 INFO     Epoch [2/25]
+22:43 INFO     SEC: Iter:    700,  Train Loss:   1.5,  Train Acc: 31.25%, Val Loss:   1.5,  Val Acc: 46.70%, Val F1: 30.48% Time: 5.537914276123047 
+22:44 INFO     SEC: Iter:    800,  Train Loss:   1.5,  Train Acc: 50.00%, Val Loss:   1.4,  Val Acc: 50.90%, Val F1: 32.94% Time: 44.882991313934326 *
+22:44 INFO     SEC: Iter:    900,  Train Loss:   1.2,  Train Acc: 56.25%, Val Loss:   1.3,  Val Acc: 53.99%, Val F1: 40.31% Time: 82.51677179336548 *
+22:45 INFO     SEC: Iter:   1000,  Train Loss:   1.3,  Train Acc: 59.38%, Val Loss:   1.3,  Val Acc: 54.68%, Val F1: 44.62% Time: 120.39956855773926 *
+22:45 INFO     SEC: Iter:   1100,  Train Loss:   1.1,  Train Acc: 71.88%, Val Loss:   1.3,  Val Acc: 53.22%, Val F1: 43.46% Time: 153.4742169380188 
+22:46 INFO     SEC: Iter:   1200,  Train Loss:   1.2,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 55.54%, Val F1: 44.15% Time: 191.5273449420929 *
+22:47 INFO     SEC: Iter:   1300,  Train Loss:   1.3,  Train Acc: 46.88%, Val Loss:   1.2,  Val Acc: 56.91%, Val F1: 41.70% Time: 224.48500299453735 
+22:47 INFO     Train time usage: 250.54301381111145
+22:47 INFO     Test time usage: 2.527813196182251
+22:47 INFO     CoNLL Method: Test Acc: 51.42%, Test F1: 31.31%
+22:47 INFO     Epoch [3/25]
+22:47 INFO     SEC: Iter:   1400,  Train Loss:   1.1,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 55.88%, Val F1: 45.11% Time: 11.464062213897705 *
+22:48 INFO     SEC: Iter:   1500,  Train Loss:   1.2,  Train Acc: 46.88%, Val Loss:   1.3,  Val Acc: 56.57%, Val F1: 42.70% Time: 44.59654879570007 
+22:48 INFO     SEC: Iter:   1600,  Train Loss:   1.3,  Train Acc: 50.00%, Val Loss:   1.2,  Val Acc: 56.48%, Val F1: 49.11% Time: 82.58494853973389 *
+22:49 INFO     SEC: Iter:   1700,  Train Loss:  0.77,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 56.39%, Val F1: 43.79% Time: 115.90428709983826 
+22:50 INFO     SEC: Iter:   1800,  Train Loss:   1.4,  Train Acc: 53.12%, Val Loss:   1.2,  Val Acc: 55.79%, Val F1: 44.18% Time: 149.38455724716187 
+22:50 INFO     SEC: Iter:   1900,  Train Loss:   1.0,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 56.22%, Val F1: 40.47% Time: 183.74620485305786 
+22:51 INFO     SEC: Iter:   2000,  Train Loss:   1.2,  Train Acc: 50.00%, Val Loss:   1.2,  Val Acc: 56.22%, Val F1: 46.61% Time: 217.1262378692627 
+22:51 INFO     Train time usage: 242.66302037239075
+22:51 INFO     Test time usage: 2.4931869506835938
+22:51 INFO     CoNLL Method: Test Acc: 50.63%, Test F1: 31.17%
+22:51 INFO     Epoch [4/25]
+22:51 INFO     SEC: Iter:   2100,  Train Loss:   1.3,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 55.97%, Val F1: 43.14% Time: 7.9653379917144775 
+22:52 INFO     SEC: Iter:   2200,  Train Loss:   1.0,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 56.74%, Val F1: 44.27% Time: 41.55871343612671 
+22:53 INFO     SEC: Iter:   2300,  Train Loss:   1.5,  Train Acc: 43.75%, Val Loss:   1.2,  Val Acc: 54.94%, Val F1: 44.61% Time: 76.11133289337158 
+22:53 INFO     SEC: Iter:   2400,  Train Loss:   1.2,  Train Acc: 53.12%, Val Loss:   1.2,  Val Acc: 57.00%, Val F1: 45.17% Time: 111.23298454284668 
+22:54 INFO     SEC: Iter:   2500,  Train Loss:   1.2,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 56.57%, Val F1: 45.99% Time: 146.408949136734 
+22:54 INFO     SEC: Iter:   2600,  Train Loss:   1.0,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 45.56% Time: 181.58474826812744 
+22:55 INFO     SEC: Iter:   2700,  Train Loss:   1.0,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.85%, Val F1: 44.67% Time: 215.4563627243042 
+22:55 INFO     Train time usage: 240.9507875442505
+22:55 INFO     Test time usage: 2.5828583240509033
+22:55 INFO     CoNLL Method: Test Acc: 50.63%, Test F1: 31.17%
+22:55 INFO     Epoch [5/25]
+22:55 INFO     SEC: Iter:   2800,  Train Loss:   1.1,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 54.68%, Val F1: 44.69% Time: 9.490069389343262 
+22:56 INFO     SEC: Iter:   2900,  Train Loss:  0.68,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 56.74%, Val F1: 44.12% Time: 44.642611265182495 
+22:57 INFO     SEC: Iter:   3000,  Train Loss:  0.61,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 55.19%, Val F1: 41.40% Time: 78.5486114025116 
+22:57 INFO     SEC: Iter:   3100,  Train Loss:   1.3,  Train Acc: 53.12%, Val Loss:   1.2,  Val Acc: 56.31%, Val F1: 44.88% Time: 112.78742051124573 
+22:58 INFO     SEC: Iter:   3200,  Train Loss:   1.3,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 56.39%, Val F1: 47.05% Time: 146.68016147613525 
+22:58 INFO     SEC: Iter:   3300,  Train Loss:   1.1,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 56.57%, Val F1: 45.52% Time: 180.26397466659546 
+22:59 INFO     SEC: Iter:   3400,  Train Loss:   1.0,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 56.48%, Val F1: 48.64% Time: 213.60456204414368 
+22:59 INFO     Train time usage: 236.73520159721375
+22:59 INFO     Test time usage: 2.48905348777771
+22:59 INFO     CoNLL Method: Test Acc: 50.63%, Test F1: 31.17%
+22:59 INFO     Epoch [6/25]
+22:59 INFO     SEC: Iter:   3500,  Train Loss:  0.86,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 56.91%, Val F1: 44.45% Time: 10.113542318344116 
+23:00 INFO     SEC: Iter:   3600,  Train Loss:   1.0,  Train Acc: 53.12%, Val Loss:   1.2,  Val Acc: 56.14%, Val F1: 44.70% Time: 43.07965898513794 
+23:01 INFO     SEC: Iter:   3700,  Train Loss:   1.0,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 57.00%, Val F1: 44.39% Time: 76.239431142807 
+23:01 INFO     SEC: Iter:   3800,  Train Loss:   1.3,  Train Acc: 53.12%, Val Loss:   1.2,  Val Acc: 55.45%, Val F1: 46.02% Time: 109.20936727523804 
+23:02 INFO     SEC: Iter:   3900,  Train Loss:   1.0,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 55.88%, Val F1: 47.70% Time: 142.1733202934265 
+23:02 INFO     SEC: Iter:   4000,  Train Loss:   1.1,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 57.17%, Val F1: 48.33% Time: 175.14731907844543 
+23:03 INFO     SEC: Iter:   4100,  Train Loss:   1.1,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 56.74%, Val F1: 47.10% Time: 208.2254946231842 
+23:03 INFO     Train time usage: 229.9066219329834
+23:03 INFO     Test time usage: 2.5898497104644775
+23:03 INFO     CoNLL Method: Test Acc: 50.63%, Test F1: 31.17%
+23:03 INFO     Epoch [7/25]
+23:03 INFO     SEC: Iter:   4200,  Train Loss:   1.1,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 56.91%, Val F1: 44.99% Time: 11.57905912399292 
+23:04 INFO     SEC: Iter:   4300,  Train Loss:   1.0,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 55.19%, Val F1: 41.67% Time: 44.55715823173523 
+23:04 INFO     SEC: Iter:   4400,  Train Loss:  0.71,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.17%, Val F1: 47.20% Time: 77.53407025337219 
+23:05 INFO     SEC: Iter:   4500,  Train Loss:  0.89,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 56.57%, Val F1: 44.31% Time: 110.53998398780823 
+23:06 INFO     SEC: Iter:   4600,  Train Loss:   1.2,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 58.11%, Val F1: 45.25% Time: 143.76657676696777 
+23:06 INFO     SEC: Iter:   4700,  Train Loss:   1.2,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 46.78% Time: 176.78359246253967 
+23:07 INFO     SEC: Iter:   4800,  Train Loss:  0.88,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 43.71% Time: 209.7881782054901 
+23:07 INFO     Train time usage: 230.30637550354004
+23:07 INFO     Test time usage: 2.4850711822509766
+23:07 INFO     CoNLL Method: Test Acc: 50.63%, Test F1: 31.17%
+23:07 INFO     Epoch [8/25]
+23:07 INFO     SEC: Iter:   4900,  Train Loss:  0.94,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 56.14%, Val F1: 46.07% Time: 12.447952032089233 
+23:08 INFO     SEC: Iter:   5000,  Train Loss:  0.61,  Train Acc: 81.25%, Val Loss:   1.3,  Val Acc: 56.14%, Val F1: 46.04% Time: 45.64333724975586 
+23:08 INFO     SEC: Iter:   5100,  Train Loss:   1.0,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 55.88%, Val F1: 44.48% Time: 78.73616147041321 
+23:09 INFO     SEC: Iter:   5200,  Train Loss:   0.9,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 56.82%, Val F1: 46.22% Time: 111.82201647758484 
+23:09 INFO     SEC: Iter:   5300,  Train Loss:  0.71,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.08%, Val F1: 45.46% Time: 144.87194299697876 
+23:10 INFO     SEC: Iter:   5400,  Train Loss:  0.78,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 56.31%, Val F1: 46.07% Time: 177.88297080993652 
+23:11 INFO     SEC: Iter:   5500,  Train Loss:   1.1,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 56.05%, Val F1: 44.21% Time: 210.9978222846985 
+23:11 INFO     Train time usage: 230.3829288482666
+23:11 INFO     Test time usage: 2.4862442016601562
+23:11 INFO     CoNLL Method: Test Acc: 50.63%, Test F1: 31.17%
+23:11 INFO     Epoch [9/25]
+23:11 INFO     SEC: Iter:   5600,  Train Loss:   1.2,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 56.91%, Val F1: 44.22% Time: 14.372820854187012 
+23:12 INFO     SEC: Iter:   5700,  Train Loss:  0.69,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 56.31%, Val F1: 44.57% Time: 48.68686366081238 
+23:12 INFO     SEC: Iter:   5800,  Train Loss:  0.82,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.25%, Val F1: 44.56% Time: 82.26142859458923 
+23:13 INFO     SEC: Iter:   5900,  Train Loss:   1.2,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 47.44% Time: 115.77553486824036 
+23:13 INFO     SEC: Iter:   6000,  Train Loss:  0.79,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.08%, Val F1: 45.31% Time: 148.8104944229126 
+23:14 INFO     SEC: Iter:   6100,  Train Loss:   0.9,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 56.31%, Val F1: 46.18% Time: 182.20109605789185 
+23:15 INFO     SEC: Iter:   6200,  Train Loss:  0.99,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 44.27% Time: 217.35844206809998 
+23:15 INFO     Train time usage: 236.55223274230957
+23:15 INFO     Test time usage: 2.4863460063934326
+23:15 INFO     CoNLL Method: Test Acc: 50.63%, Test F1: 31.17%
+23:15 INFO     Epoch [10/25]
+23:15 INFO     SEC: Iter:   6300,  Train Loss:   1.1,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 45.25% Time: 14.715044021606445 
+23:16 INFO     SEC: Iter:   6400,  Train Loss:   1.4,  Train Acc: 43.75%, Val Loss:   1.2,  Val Acc: 56.48%, Val F1: 43.99% Time: 47.75429010391235 
+23:16 INFO     SEC: Iter:   6500,  Train Loss:   1.0,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 56.82%, Val F1: 44.64% Time: 80.7656421661377 
+23:17 INFO     SEC: Iter:   6600,  Train Loss:   1.4,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 47.36% Time: 114.73622059822083 
+23:17 INFO     SEC: Iter:   6700,  Train Loss:  0.95,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.17%, Val F1: 45.56% Time: 149.45428371429443 
+23:18 INFO     SEC: Iter:   6800,  Train Loss:  0.77,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 56.74%, Val F1: 46.65% Time: 182.82067322731018 
+23:19 INFO     SEC: Iter:   6900,  Train Loss:   0.9,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 55.97%, Val F1: 42.04% Time: 215.77095293998718 
+23:19 INFO     Train time usage: 232.97355818748474
+23:19 INFO     Test time usage: 2.491034984588623
+23:19 INFO     CoNLL Method: Test Acc: 50.63%, Test F1: 31.17%
+23:19 INFO     Epoch [11/25]
+23:19 INFO     SEC: Iter:   7000,  Train Loss:   0.9,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 57.60%, Val F1: 43.28% Time: 15.822029113769531 
+23:20 INFO     SEC: Iter:   7100,  Train Loss:   1.4,  Train Acc: 46.88%, Val Loss:   1.2,  Val Acc: 56.82%, Val F1: 43.30% Time: 48.82543087005615 
+23:20 INFO     SEC: Iter:   7200,  Train Loss:   1.1,  Train Acc: 50.00%, Val Loss:   1.2,  Val Acc: 58.03%, Val F1: 43.53% Time: 82.9879846572876 
+23:21 INFO     SEC: Iter:   7300,  Train Loss:  0.74,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 44.14% Time: 116.1162371635437 
+23:21 INFO     SEC: Iter:   7400,  Train Loss:   1.1,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 46.96% Time: 151.1956582069397 
+23:22 INFO     SEC: Iter:   7500,  Train Loss:  0.76,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.68%, Val F1: 48.76% Time: 192.81535124778748 *
+23:23 INFO     SEC: Iter:   7600,  Train Loss:   1.3,  Train Acc: 50.00%, Val Loss:   1.2,  Val Acc: 56.39%, Val F1: 43.93% Time: 226.8938558101654 
+23:23 INFO     Train time usage: 242.8792462348938
+23:23 INFO     Test time usage: 2.516047716140747
+23:23 INFO     CoNLL Method: Test Acc: 52.93%, Test F1: 33.54%
+23:23 INFO     Epoch [12/25]
+23:23 INFO     SEC: Iter:   7700,  Train Loss:  0.66,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 56.14%, Val F1: 43.86% Time: 16.9858660697937 
+23:24 INFO     SEC: Iter:   7800,  Train Loss:   1.2,  Train Acc: 50.00%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 44.51% Time: 50.03219127655029 
+23:24 INFO     SEC: Iter:   7900,  Train Loss:   1.4,  Train Acc: 53.12%, Val Loss:   1.2,  Val Acc: 58.45%, Val F1: 47.38% Time: 83.03847527503967 
+23:25 INFO     SEC: Iter:   8000,  Train Loss:  0.98,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 45.98% Time: 116.02040958404541 
+23:26 INFO     SEC: Iter:   8100,  Train Loss:  0.73,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 57.00%, Val F1: 44.32% Time: 148.9802794456482 
+23:26 INFO     SEC: Iter:   8200,  Train Loss:  0.96,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 57.00%, Val F1: 46.14% Time: 181.939311504364 
+23:27 INFO     SEC: Iter:   8300,  Train Loss:   1.2,  Train Acc: 53.12%, Val Loss:   1.2,  Val Acc: 57.00%, Val F1: 43.35% Time: 215.00230169296265 
+23:27 INFO     Train time usage: 229.9103877544403
+23:27 INFO     Test time usage: 2.4881625175476074
+23:27 INFO     CoNLL Method: Test Acc: 52.93%, Test F1: 33.54%
+23:27 INFO     Epoch [13/25]
+23:27 INFO     SEC: Iter:   8400,  Train Loss:   1.1,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 57.08%, Val F1: 48.29% Time: 18.089776277542114 
+23:28 INFO     SEC: Iter:   8500,  Train Loss:   0.7,  Train Acc: 84.38%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 48.36% Time: 51.19129228591919 
+23:28 INFO     SEC: Iter:   8600,  Train Loss:   0.7,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 45.52% Time: 84.26627779006958 
+23:29 INFO     SEC: Iter:   8700,  Train Loss:  0.82,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 57.68%, Val F1: 44.77% Time: 117.44634675979614 
+23:29 INFO     SEC: Iter:   8800,  Train Loss:  0.78,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 46.76% Time: 150.50629329681396 
+23:30 INFO     SEC: Iter:   8900,  Train Loss:  0.81,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.25%, Val F1: 48.01% Time: 183.53240275382996 
+23:31 INFO     SEC: Iter:   9000,  Train Loss:  0.99,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.25%, Val F1: 47.46% Time: 216.50947761535645 
+23:31 INFO     Train time usage: 230.30052495002747
+23:31 INFO     Test time usage: 2.4920647144317627
+23:31 INFO     CoNLL Method: Test Acc: 52.93%, Test F1: 33.54%
+23:31 INFO     Epoch [14/25]
+23:31 INFO     SEC: Iter:   9100,  Train Loss:  0.83,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.60%, Val F1: 46.18% Time: 19.263675689697266 
+23:32 INFO     SEC: Iter:   9200,  Train Loss:  0.75,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 56.74%, Val F1: 47.57% Time: 52.32738494873047 
+23:32 INFO     SEC: Iter:   9300,  Train Loss:   1.1,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 56.91%, Val F1: 44.95% Time: 85.37948894500732 
+23:33 INFO     SEC: Iter:   9400,  Train Loss:  0.77,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 48.18% Time: 118.61562776565552 
+23:33 INFO     SEC: Iter:   9500,  Train Loss:   1.0,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 56.82%, Val F1: 43.49% Time: 151.7970802783966 
+23:34 INFO     SEC: Iter:   9600,  Train Loss:   1.2,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 46.55% Time: 184.887113571167 
+23:34 INFO     SEC: Iter:   9700,  Train Loss:  0.95,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.68%, Val F1: 48.24% Time: 218.0637183189392 
+23:35 INFO     Train time usage: 230.842129945755
+23:35 INFO     Test time usage: 2.4843735694885254
+23:35 INFO     CoNLL Method: Test Acc: 52.93%, Test F1: 33.54%
+23:35 INFO     Epoch [15/25]
+23:35 INFO     SEC: Iter:   9800,  Train Loss:  0.75,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 46.36% Time: 20.551712036132812 
+23:36 INFO     SEC: Iter:   9900,  Train Loss:  0.79,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 55.45%, Val F1: 44.99% Time: 53.59127163887024 
+23:36 INFO     SEC: Iter:  10000,  Train Loss:  0.99,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 55.54%, Val F1: 45.58% Time: 86.63616943359375 
+23:37 INFO     SEC: Iter:  10100,  Train Loss:   1.1,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 48.39% Time: 119.59393286705017 
+23:37 INFO     SEC: Iter:  10200,  Train Loss:   1.5,  Train Acc: 46.88%, Val Loss:   1.2,  Val Acc: 57.60%, Val F1: 47.98% Time: 152.62055444717407 
+23:38 INFO     SEC: Iter:  10300,  Train Loss:   1.0,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.17%, Val F1: 47.26% Time: 185.76109313964844 
+23:38 INFO     SEC: Iter:  10400,  Train Loss:  0.75,  Train Acc: 78.12%, Val Loss:   1.2,  Val Acc: 58.03%, Val F1: 47.43% Time: 218.81777000427246 
+23:39 INFO     Train time usage: 230.28181767463684
+23:39 INFO     Test time usage: 2.495586395263672
+23:39 INFO     CoNLL Method: Test Acc: 52.93%, Test F1: 33.54%
+23:39 INFO     Epoch [16/25]
+23:39 INFO     SEC: Iter:  10500,  Train Loss:  0.93,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 46.29% Time: 21.67076802253723 
+23:40 INFO     SEC: Iter:  10600,  Train Loss:  0.61,  Train Acc: 84.38%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 46.24% Time: 54.72697949409485 
+23:40 INFO     SEC: Iter:  10700,  Train Loss:  0.98,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 56.57%, Val F1: 44.64% Time: 87.77300143241882 
+23:41 INFO     SEC: Iter:  10800,  Train Loss:   0.9,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 44.80% Time: 120.8041365146637 
+23:41 INFO     SEC: Iter:  10900,  Train Loss:   1.3,  Train Acc: 43.75%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 45.89% Time: 153.87077021598816 
+23:42 INFO     SEC: Iter:  11000,  Train Loss:   0.9,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 58.11%, Val F1: 47.75% Time: 186.98989272117615 
+23:42 INFO     SEC: Iter:  11100,  Train Loss:  0.76,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 45.82% Time: 220.04040122032166 
+23:42 INFO     Train time usage: 230.45697569847107
+23:42 INFO     Test time usage: 2.519732713699341
+23:42 INFO     CoNLL Method: Test Acc: 52.93%, Test F1: 33.54%
+23:42 INFO     Epoch [17/25]
+23:43 INFO     SEC: Iter:  11200,  Train Loss:  0.93,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.00%, Val F1: 46.02% Time: 23.400574207305908 
+23:43 INFO     SEC: Iter:  11300,  Train Loss:   1.1,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 58.37%, Val F1: 45.24% Time: 56.90405631065369 
+23:44 INFO     SEC: Iter:  11400,  Train Loss:  0.99,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.17%, Val F1: 44.65% Time: 90.38200950622559 
+23:45 INFO     SEC: Iter:  11500,  Train Loss:  0.87,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 58.11%, Val F1: 44.49% Time: 123.57684206962585 
+23:45 INFO     SEC: Iter:  11600,  Train Loss:   1.3,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 58.45%, Val F1: 49.42% Time: 162.58878350257874 *
+23:46 INFO     SEC: Iter:  11700,  Train Loss:  0.86,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 46.89% Time: 195.6405839920044 
+23:46 INFO     SEC: Iter:  11800,  Train Loss:  0.75,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 56.91%, Val F1: 46.24% Time: 228.63131761550903 
+23:46 INFO     Train time usage: 237.8029284477234
+23:47 INFO     Test time usage: 2.511908531188965
+23:47 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+23:47 INFO     Epoch [18/25]
+23:47 INFO     SEC: Iter:  11900,  Train Loss:  0.82,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 58.11%, Val F1: 48.40% Time: 24.01004719734192 
+23:48 INFO     SEC: Iter:  12000,  Train Loss:  0.83,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 47.50% Time: 57.0934374332428 
+23:48 INFO     SEC: Iter:  12100,  Train Loss:  0.77,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 44.28% Time: 90.25504350662231 
+23:49 INFO     SEC: Iter:  12200,  Train Loss:  0.77,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 58.11%, Val F1: 47.60% Time: 123.40695190429688 
+23:49 INFO     SEC: Iter:  12300,  Train Loss:   1.0,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 58.97%, Val F1: 48.16% Time: 156.49513745307922 
+23:50 INFO     SEC: Iter:  12400,  Train Loss:  0.64,  Train Acc: 78.12%, Val Loss:   1.2,  Val Acc: 58.03%, Val F1: 44.61% Time: 189.52541041374207 
+23:50 INFO     SEC: Iter:  12500,  Train Loss:   0.7,  Train Acc: 78.12%, Val Loss:   1.2,  Val Acc: 58.54%, Val F1: 46.27% Time: 222.4985773563385 
+23:50 INFO     Train time usage: 230.47889590263367
+23:50 INFO     Test time usage: 2.480471134185791
+23:50 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+23:50 INFO     Epoch [19/25]
+23:51 INFO     SEC: Iter:  12600,  Train Loss:  0.93,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 46.01% Time: 24.848447561264038 
+23:51 INFO     SEC: Iter:  12700,  Train Loss:  0.69,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 49.92% Time: 57.51814389228821 
+23:52 INFO     SEC: Iter:  12800,  Train Loss:   1.0,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 47.34% Time: 90.22940182685852 
+23:53 INFO     SEC: Iter:  12900,  Train Loss:  0.91,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 58.45%, Val F1: 49.05% Time: 122.95501804351807 
+23:53 INFO     SEC: Iter:  13000,  Train Loss:   1.1,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.68%, Val F1: 47.98% Time: 155.95119214057922 
+23:54 INFO     SEC: Iter:  13100,  Train Loss:  0.92,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 56.31%, Val F1: 43.91% Time: 188.938960313797 
+23:54 INFO     SEC: Iter:  13200,  Train Loss:   1.0,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 47.22% Time: 221.9424343109131 
+23:54 INFO     Train time usage: 228.76582956314087
+23:54 INFO     Test time usage: 2.481590509414673
+23:54 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+23:54 INFO     Epoch [20/25]
+23:55 INFO     SEC: Iter:  13300,  Train Loss:  0.67,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 57.85%, Val F1: 46.12% Time: 26.159194707870483 
+23:55 INFO     SEC: Iter:  13400,  Train Loss:  0.81,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 46.44% Time: 59.14131045341492 
+23:56 INFO     SEC: Iter:  13500,  Train Loss:  0.76,  Train Acc: 78.12%, Val Loss:   1.2,  Val Acc: 58.20%, Val F1: 46.56% Time: 92.1669430732727 
+23:56 INFO     SEC: Iter:  13600,  Train Loss:   1.1,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.25%, Val F1: 46.59% Time: 125.29465556144714 
+23:57 INFO     SEC: Iter:  13700,  Train Loss:   1.0,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 58.20%, Val F1: 47.75% Time: 158.31225895881653 
+23:57 INFO     SEC: Iter:  13800,  Train Loss:   1.3,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 46.30% Time: 191.2876467704773 
+23:58 INFO     SEC: Iter:  13900,  Train Loss:  0.86,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 46.93% Time: 224.37480974197388 
+23:58 INFO     Train time usage: 230.07117223739624
+23:58 INFO     Test time usage: 2.4909791946411133
+23:58 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+23:58 INFO     Epoch [21/25]
+23:59 INFO     SEC: Iter:  14000,  Train Loss:   1.1,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.60%, Val F1: 46.85% Time: 27.263264656066895 
+23:59 INFO     SEC: Iter:  14100,  Train Loss:  0.63,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 57.68%, Val F1: 46.58% Time: 60.451340675354004 
+00:00 INFO     SEC: Iter:  14200,  Train Loss:  0.96,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 58.54%, Val F1: 48.37% Time: 93.52411270141602 
+00:00 INFO     SEC: Iter:  14300,  Train Loss:   0.8,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.60%, Val F1: 46.94% Time: 128.3314504623413 
+00:01 INFO     SEC: Iter:  14400,  Train Loss:  0.59,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 58.03%, Val F1: 47.38% Time: 163.51966667175293 
+00:01 INFO     SEC: Iter:  14500,  Train Loss:   1.0,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 57.60%, Val F1: 47.74% Time: 198.43364000320435 
+00:02 INFO     SEC: Iter:  14600,  Train Loss:   1.2,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 48.31% Time: 233.3956582546234 
+00:02 INFO     Train time usage: 238.23627543449402
+00:02 INFO     Test time usage: 2.5613012313842773
+00:02 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+00:02 INFO     Epoch [22/25]
+00:03 INFO     SEC: Iter:  14700,  Train Loss:  0.66,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 48.31% Time: 30.073018550872803 
+00:03 INFO     SEC: Iter:  14800,  Train Loss:  0.86,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.68%, Val F1: 48.54% Time: 65.0125105381012 
+00:04 INFO     SEC: Iter:  14900,  Train Loss:  0.92,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 45.89% Time: 99.73487997055054 
+00:04 INFO     SEC: Iter:  15000,  Train Loss:  0.79,  Train Acc: 65.62%, Val Loss:   1.2,  Val Acc: 57.42%, Val F1: 46.74% Time: 134.42106223106384 
+00:05 INFO     SEC: Iter:  15100,  Train Loss:   1.3,  Train Acc: 53.12%, Val Loss:   1.2,  Val Acc: 58.20%, Val F1: 47.57% Time: 169.42317128181458 
+00:06 INFO     SEC: Iter:  15200,  Train Loss:  0.88,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.34%, Val F1: 47.99% Time: 203.07577919960022 
+00:06 INFO     SEC: Iter:  15300,  Train Loss:  0.68,  Train Acc: 84.38%, Val Loss:   1.2,  Val Acc: 58.20%, Val F1: 48.30% Time: 235.99661374092102 
+00:06 INFO     Train time usage: 239.38433861732483
+00:06 INFO     Test time usage: 2.4801440238952637
+00:06 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+00:06 INFO     Epoch [23/25]
+00:07 INFO     SEC: Iter:  15400,  Train Loss:   1.3,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 48.53% Time: 29.433966159820557 
+00:07 INFO     SEC: Iter:  15500,  Train Loss:   1.2,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 57.85%, Val F1: 47.97% Time: 62.31470322608948 
+00:08 INFO     SEC: Iter:  15600,  Train Loss:   0.8,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 48.74% Time: 95.19807481765747 
+00:08 INFO     SEC: Iter:  15700,  Train Loss:  0.71,  Train Acc: 78.12%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 48.23% Time: 128.0535807609558 
+00:09 INFO     SEC: Iter:  15800,  Train Loss:  0.67,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 57.60%, Val F1: 48.08% Time: 160.92814016342163 
+00:09 INFO     SEC: Iter:  15900,  Train Loss:   1.1,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 57.68%, Val F1: 48.58% Time: 193.80882787704468 
+00:10 INFO     SEC: Iter:  16000,  Train Loss:  0.78,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 57.77%, Val F1: 46.10% Time: 226.67379450798035 
+00:10 INFO     Train time usage: 228.91685605049133
+00:10 INFO     Test time usage: 2.479780673980713
+00:10 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+00:10 INFO     Epoch [24/25]
+00:11 INFO     SEC: Iter:  16100,  Train Loss:  0.66,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 58.03%, Val F1: 49.02% Time: 30.592663764953613 
+00:11 INFO     SEC: Iter:  16200,  Train Loss:  0.73,  Train Acc: 81.25%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 47.24% Time: 63.46215057373047 
+00:12 INFO     SEC: Iter:  16300,  Train Loss:   1.0,  Train Acc: 56.25%, Val Loss:   1.2,  Val Acc: 57.51%, Val F1: 47.82% Time: 96.41433453559875 
+00:12 INFO     SEC: Iter:  16400,  Train Loss:  0.82,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 58.37%, Val F1: 48.87% Time: 129.37399744987488 
+00:13 INFO     SEC: Iter:  16500,  Train Loss:   1.0,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 58.03%, Val F1: 48.57% Time: 162.3032968044281 
+00:13 INFO     SEC: Iter:  16600,  Train Loss:  0.76,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 47.95% Time: 195.28204917907715 
+00:14 INFO     SEC: Iter:  16700,  Train Loss:  0.93,  Train Acc: 68.75%, Val Loss:   1.2,  Val Acc: 57.85%, Val F1: 48.85% Time: 228.23216581344604 
+00:14 INFO     Train time usage: 229.35245013237
+00:14 INFO     Test time usage: 2.5187439918518066
+00:14 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+00:14 INFO     Epoch [25/25]
+00:15 INFO     SEC: Iter:  16800,  Train Loss:   1.2,  Train Acc: 59.38%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 49.05% Time: 31.75518798828125 
+00:15 INFO     SEC: Iter:  16900,  Train Loss:   0.9,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 58.20%, Val F1: 49.36% Time: 64.68678283691406 
+00:16 INFO     SEC: Iter:  17000,  Train Loss:  0.88,  Train Acc: 62.50%, Val Loss:   1.2,  Val Acc: 58.37%, Val F1: 48.72% Time: 97.5746214389801 
+00:16 INFO     SEC: Iter:  17100,  Train Loss:  0.72,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 57.85%, Val F1: 48.71% Time: 130.4426064491272 
+00:17 INFO     SEC: Iter:  17200,  Train Loss:  0.75,  Train Acc: 71.88%, Val Loss:   1.2,  Val Acc: 57.94%, Val F1: 48.80% Time: 163.37334489822388 
+00:17 INFO     SEC: Iter:  17300,  Train Loss:  0.99,  Train Acc: 75.00%, Val Loss:   1.2,  Val Acc: 58.03%, Val F1: 48.10% Time: 196.3281831741333 
+00:18 INFO     SEC: Iter:  17400,  Train Loss:  0.87,  Train Acc: 68.00%, Val Loss:   1.2,  Val Acc: 57.85%, Val F1: 48.00% Time: 229.2433500289917 
+00:18 INFO     Train time usage: 229.24382734298706
+00:18 INFO     Test time usage: 2.49281644821167
+00:18 INFO     CoNLL Method: Test Acc: 52.69%, Test F1: 32.88%
+00:18 INFO     dev_best_acc_sec: 58.45%,  dev_best_f1_sec: 49.42%
