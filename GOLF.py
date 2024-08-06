@@ -52,14 +52,15 @@ class Model(nn.Module):
         
         # BERT encoder
         self.bert = AutoModel.from_pretrained(args.model_name_or_path)
-        for param in self.bert.parameters():
-            param.requires_grad = not(args.freeze_bert)
-        
-      
+        # for param in self.bert.parameters():
+        #     param.requires_grad = not(args.freeze_bert)
+
         self.layer_norm = nn.LayerNorm(args.config.hidden_size, eps=args.config.layer_norm_eps)
         
         
         # classifier
+        print(f"Number of sections (classes): {args.n_sec}")
+
   
         self.fc_sec = nn.Linear(args.config.hidden_size, args.n_sec)
        
@@ -86,6 +87,8 @@ class Model(nn.Module):
     
     def train_forward(self, x, mask, y1_sec, arg1_mask, arg2_mask):
         ### BERT encoder
+        # for name,param in self.bert.named_parameters():
+        #     print(param.requires_grad,name)
         context = x
         bert_out = self.bert(context, attention_mask=mask)
         
@@ -93,6 +96,7 @@ class Model(nn.Module):
         ### classification loss
         pooled = bert_out.last_hidden_state[:, 0, :] # (batch, hidden)
         logits_sec = self.fc_sec(pooled) # (batch, sec)
+
 
         loss_fct = nn.CrossEntropyLoss()
         classification_loss = loss_fct(logits_sec, y1_sec)

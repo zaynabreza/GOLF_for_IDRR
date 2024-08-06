@@ -1,4 +1,4 @@
-# Global and Local Hierarchy-aware Contrastive Framework for Hierarchical Implicit Discourse Relation Recognition (ACL 2023)
+#### (Modified from) Global and Local Hierarchy-aware Contrastive Framework for Hierarchical Implicit Discourse Relation Recognition (ACL 2023)
 
 arXiv preprint: https://arxiv.org/abs/2211.13873
 
@@ -29,6 +29,10 @@ Run the following script for training, evaludating, and testing,
 python3 run.py
 ```
 （Our code can be easily run on a single NVIDIA GeForce RTX 3090)
+
+## Instructions for DiscoGem and Adapters(Ours)
+### Adapters
+Install adapter hub from source [link](https://docs.adapterhub.ml/installation.html) the same folder.
 
 ### Citation
 If you find this work helpful, please cite our paper by:

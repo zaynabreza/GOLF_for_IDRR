@@ -12,6 +12,7 @@ from sklearn import metrics
 import time
 from utils import get_time_dif
 from pytorch_pretrained_bert.optimization import BertAdam
+from custom_eval import CoNLL_eval, dup_eval, expand_eval
 
 
 def train(args, model, train_loader, dev_loader, test_loader):
@@ -74,7 +75,8 @@ def train(args, model, train_loader, dev_loader, test_loader):
 
         time_dif = get_time_dif(start_time)
         lgg.info("Train time usage: {}".format(time_dif))
-        acc_sec_test, f1_sec_test = test(args, model, test_loader)
+        # acc_sec_test, f1_sec_test = test(args, model, test_loader)
+        acc_sec_test, f1_sec_test = CoNLL_eval(args, model, test_loader)
 
     dev_msg = 'dev_best_acc_sec: {0:>6.2%},  dev_best_f1_sec: {1:>6.2%}'
     lgg.info(dev_msg.format(dev_best_acc_sec, dev_best_f1_sec))
@@ -86,7 +88,8 @@ def test(args, model, test_loader):
     model.eval()
     start_time = time.time()
 
-    test_loss, acc_sec, f1_sec, report_sec, confusion_sec = evaluate(args, model, test_loader, test=True)
+    test_loss, acc_sec, f1_sec, report_sec, confusion_sec, predictions = evaluate(args, model, test_loader, test=True)
+
 
     time_dif = get_time_dif(start_time)
     lgg.info("Test time usage: {}".format(time_dif))
@@ -95,6 +98,8 @@ def test(args, model, test_loader):
     lgg.info(msg.format(test_loss, acc_sec, f1_sec))
     
     lgg.info(report_sec)
+
+    np.savetxt(args.save_preds+args.model_name_or_path+'preds.csv', predictions, fmt='%d', delimiter=',')
     return acc_sec, f1_sec
 
 
@@ -159,8 +164,8 @@ def evaluate(args, model, data_loader, test=False):
 
         report_sec = metrics.classification_report(gold_sense_sec, predict_sense_sec, target_names=args.i2sec, digits=4)
         confusion_sec = metrics.confusion_matrix(gold_sense_sec, predict_sense_sec)
-     
+        predictions = np.vstack((gold_sense_sec, predict_sense_sec)).T
 
-        return loss_total / len(data_loader), acc_sec, f1_sec, report_sec, confusion_sec
+        return loss_total / len(data_loader), acc_sec, f1_sec, report_sec, confusion_sec, predictions
                 
     return loss_total / len(data_loader), acc_sec, f1_sec

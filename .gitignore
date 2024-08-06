@@ -1,3 +1,9 @@
 PDTB3/Ji/data/dev.txt
 PDTB3/Ji/data/test.txt
 PDTB3/Ji/data/train.txt
+ __pycache__/**
+Combined_testDG/**
+DiscoGem/**
+PDTB/**
+.DS_Store
+

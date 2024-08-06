@@ -52,17 +52,19 @@ class MyDataset(Dataset):
                     continue
                 labels1, labels2, arg1, arg2 = [_.strip() for _ in lin.split('|||')]
                 labels1, labels2 = eval(labels1), eval(labels2)
-                label_sec1 = args.sec2i[labels1[1]] if labels1[1] is not None else -1
-                label_sec2 = args.sec2i[labels2[1]] if labels2[1] is not None else -1
 
+                # Initialize default labels
+                label_sec1 = -1
+                label_sec2 = -1
+                try:
+                    label_sec1 = args.sec2i[labels1[1]] if labels1[1] is not None else -1
+                    label_sec2 = args.sec2i[labels2[1]] if labels2[1] is not None else -1
+                except KeyError:
+                    pass
 
-                # arg1_token = args.tokenizer.tokenize(arg1)
-                # arg2_token = args.tokenizer.tokenize(arg2)
-                # token = [CLS] + arg1_token + [SEP] + arg2_token + [SEP]
-
-                # token_type_ids = [0] * (len(arg1_token) + 2) + [1] * (len(arg2_token) + 1)
-                # arg1_mask = [1] * (len(arg1_token) + 2)
-                # arg2_mask = [0] * (len(arg1_token) + 2) + [1] * (len(arg2_token) + 1)
+                if args.dataset == "DiscoGem":
+                    if label_sec1 == -1 and labels1[1] == "Comparison.Similarity": ### labels in DiscoGem but not in PDTB3
+                        continue
 
                 input = args.tokenizer.encode_plus(arg1, arg2, add_special_tokens=True, 
                                                    max_length=args.pad_size, truncation=True, 
